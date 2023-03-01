@@ -1,9 +1,24 @@
 # CST-590-Capstone Project
 This is the repository hosting the code for the Capstone project by Mubasher Mehnaz Begum
 
-# This project contains two applications:
+# Project Background:
+One of the popular methods used by hackers to target databases is the SQL injection attack. Even though this vulnerability has been around for a while, most mitigation strategies are based on safe coding techniques as many programmers do not evaluate the reliability of user input data when writing code, which increases the security risks of applications. Users can enter a database query code and receive the desired data based on the program's output.
+
+This project aims to provide SQL Injection vulnerability mitigation techniques that may be used with practically any programming language and any kind of database. This project demonstrates how the SQL query might be changed to thwart such an attack; the project compares Safe Code against Unsafe Code.
+
+# Project Benefits
+The project will likely give a central comprehension of how to perceive and guard against SQL Infusion Assaults. 
+Step by step instructions to confirm input information, keep away from SQL Infusion assaults, and plan safe SQL queries that acknowledge input from online applications.
+Prevent SQL injection when running queries against the database and to safeguard the database. 
+Using a unique static and dynamic analytic approach to detect SQL injection threats. 
+Prevent loss of personal information data resulting in data breach and loss of customer trust in the company.
+
+# Implementation Approach
+
+This project contains two applications:
 1) JAVA Rest API using Springboot framework that consists of API calls for User Authentication.
 2) Front End UI application using React library that would have a login page for User data entry of Username and password for authorizing the user.
+
 
 # Steps to Clone the Repo
 
