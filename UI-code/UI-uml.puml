@@ -1,0 +1,25 @@
+@startuml UI FLow
+actor Users #blue
+activate Login_Page #LightBlue
+activate UI_Validation #Yellow
+activate JAVA_API #Orange
+activate SQL_Query #Green
+activate Database #Red
+Users ->  : interact
+Login_Page -> UI_Validation : Enter Username
+Login_Page -> UI_Validation : Enter UsernamePassword
+Login_Page -> UI_Validation : Click on Submit
+UI_Validation -[#Red]-> Login_Page: Malformed data, Reject
+UI_Validation -[#Green]-> JAVA_API: Good data, \n proceed to API Call
+JAVA_API -> SQL_Query : POST /authenticate
+SQL_Query-> Database : Query is good
+Database -[#Green]-> JAVA_API: Return  success \n fetch user from\n users table
+JAVA_API -[#Green]-> Login_Page : return the response
+SQL_Query -[#Red]-> Database : Malformed Query
+Database -[#Red]-> JAVA_API : Reject Request
+JAVA_API -[#Red]-> Login_Page: Return Failure
+
+Login_Page -[#Gray]-> Users : Response
+@enduml
+
+

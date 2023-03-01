@@ -1,0 +1,60 @@
+un-used/
+
+#UI
+# dependencies
+UI-code/node_modules
+UI-code/dist
+UI-code/.pnp
+UI-code/.pnp.js
+
+# testing
+UI-code/coverage
+
+# production
+UI-code/build
+
+# misc
+UI-code/.DS_Store
+UI-code/.env.local
+UI-code/.env.development.local
+UI-code/.env.test.local
+UI-code/.env.production.local
+
+UI-code/npm-debug.log*
+UI-code/yarn-debug.log*
+UI-code/yarn-error.log*
+
+#Java
+java-api\spring-boot-rest-api\spring-boot-rest-api/HELP.md
+java-api\spring-boot-rest-api\spring-boot-rest-api/target/
+java-api\spring-boot-rest-api\spring-boot-rest-api/!.mvn/wrapper/maven-wrapper.jar
+java-api\spring-boot-rest-api\spring-boot-rest-api/!**/src/main/**/target/
+java-api\spring-boot-rest-api\spring-boot-rest-api/!**/src/test/**/target/
+
+### STS ###
+java-api\spring-boot-rest-api\spring-boot-rest-api/.apt_generated
+java-api\spring-boot-rest-api\spring-boot-rest-api/.classpath
+java-api\spring-boot-rest-api\spring-boot-rest-api/.factorypath
+java-api\spring-boot-rest-api\spring-boot-rest-api/.project
+java-api\spring-boot-rest-api\spring-boot-rest-api/.settings
+java-api\spring-boot-rest-api\spring-boot-rest-api/.springBeans
+java-api\spring-boot-rest-api\spring-boot-rest-api/.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
